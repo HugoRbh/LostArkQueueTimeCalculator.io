@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="title" content="Lost Ark Queue Time Calculator" />
+    <meta name="description" content="Lost Ark Queue Time Calculator" />
+    <meta
+      name="keywords"
+      content="Lost, Ark, LostArk, Time, Calculator, Queue, File, Attente, Calculateur"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost Ark Queue Time Calculator</title>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="min-h-screen w-full flex flex-col items-center justify-center bg-gray-900 text-white font-serif"
+  >
+    <main
+      class="flex flex-col items-center justify-center bg-gray-800 p-10 rounded-lg shadow-2xl"
+    >
+      <img
+        class="w-20"
+        src="https://d1glcu56fxkf6q.cloudfront.net/statics/2022-02-15/images/LostArkIcon.png"
+        alt="Lost Ark Logo"
+      />
+      <h1 class="text-2xl my-4">Lost Ark Queue Calculator</h1>
+
+      <form class="flex flex-col justify-center items-center">
+        <p class="my-2 w-1/2">
+          Current Position :
+          <input
+            class="bg-gray-900 text-white py-1 px-2"
+            type="number"
+            required="required"
+            id="firstNumber"
+          />
+        </p>
+        <p class="my-2 w-1/2">
+          Next Position :
+          <input
+            class="bg-gray-900 text-white py-1 px-2"
+            type="number"
+            required="required"
+            id="secondNumber"
+          />
+        </p>
+        <input
+          class="bg-gray-900 py-2 px-4 rounded-lg my-4"
+          type="button"
+          onClick="Calculator()"
+          value="Calculate"
+        />
+        <p>Queue time remaining :</p>
+        <span id="result"></span>
+      </form>
+    </main>
+  </body>
+</html>
