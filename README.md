@@ -1,4 +1,4 @@
-# LostArkQueueTimeCalculator.io
+# Lost ArkQueue Time Calculator
 Calculation of the time remaining before the end of the queue on lost ark
 
-[r](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.playlostark.com%2Ffr-fr%2F&psig=AOvVaw3fwh6rlz8EX_JVV6hwNI1t&ust=1645122583678000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNjNk6zthPYCFQAAAAAdAAAAABAD)
+![LA_LOGO](https://user-images.githubusercontent.com/82180463/154332183-1c2033f7-efd3-401b-9173-d1e53e7fb1e4.png)
