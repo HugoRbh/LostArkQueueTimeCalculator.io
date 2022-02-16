@@ -20,14 +20,14 @@
     class="min-h-screen w-full flex flex-col items-center justify-center bg-gray-900 text-white font-serif"
   >
     <main
-      class="w-10/12 flex flex-col items-center justify-center bg-gray-800 p-10 rounded-lg shadow-2xl"
+      class="h-screen w-10/12 flex flex-col items-center justify-center bg-gray-800 p-10 shadow-2xl"
     >
       <img
         class="w-20"
         src="https://d1glcu56fxkf6q.cloudfront.net/statics/2022-02-15/images/LostArkIcon.png"
         alt="Lost Ark Logo"
       />
-      <h1 class="text-2xl my-4 text-center font-semibold">
+      <h1 class="text-2xl my-8 text-center font-semibold">
         Lost Ark Queue Calculator
       </h1>
 
@@ -53,14 +53,14 @@
           />
         </p>
         <input
-          class="bg-gray-900 py-2 px-4 rounded-lg my-4"
+          class="my-4 py-2 px-4 rounded-lg my-8 cursor-pointer bg-gray-900 transition duration-300 ease-in-out"
           type="button"
           onClick="Calculator()"
           value="Calculate"
         />
-        <p>Queue time remaining :</p>
-        <span id="result"></span>
       </form>
+      <p>Queue time remaining :</p>
+      <span class="m-2 h-16 w-64 flex items-center justify-center" id="result"></span>
     </main>
   </body>
 </html>
