@@ -1,70 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Primary Meta Tags -->
+    <title>Lost Ark Queue Time Calculator</title>
     <meta name="title" content="Lost Ark Queue Time Calculator" />
-    <meta name="description" content="Lost Ark Queue Time Calculator" />
     <meta
-      name="keywords"
-      content="Lost, Ark, LostArk, Time, Calculator, Queue, File, Attente, Calculateur"
+      name="description"
+      content="Small tool that allows to calculate the waiting time of the queue"
     />
-    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://hugorbh.github.io/LostArkQueueTimeCalculator.io/"
+    />
+    <meta property="og:title" content="Lost Ark Queue Time Calculator" />
+    <meta
+      property="og:description"
+      content="Small tool that allows to calculate the waiting time of the queue"
+    />
+    <meta property="og:image" content="" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://hugorbh.github.io/LostArkQueueTimeCalculator.io/"
+    />
+    <meta property="twitter:title" content="Lost Ark Queue Time Calculator" />
+    <meta
+      property="twitter:description"
+      content="Small tool that allows to calculate the waiting time of the queue"
+    />
+    <meta property="twitter:image" content="" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lost Ark Queue Time Calculator</title>
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/LOSTARK_Favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Small tool that allows to calculate the waiting time of the queue"
+    />
+    <meta
+      name="keywords"
+      content="Lost, Ark, Lost Ark, File, Attente, Time, Queue, Waiting, Calculator, Calculateur"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="EN" />
+    <meta name="author" content="Hugo_Rbh" />
+    <meta name="creationdate" content="17/02/2022" />
   </head>
-
-  <body
-    class="h-screen w-full flex flex-col items-center justify-center bg-gray-900 text-white font-serif"
-  >
-    <main
-      class="h-screen w-10/12 flex grow flex-col items-center justify-center bg-gray-800 p-10 shadow-2xl"
-    >
-      <img
-        class="w-20"
-        src="https://d1glcu56fxkf6q.cloudfront.net/statics/2022-02-15/images/LostArkIcon.png"
-        alt="Lost Ark Logo"
+  <body>
+    <header>
+      <img src="./assets/img/LostArkIcon.png" alt="Lost Ast Icon" />
+      <h1>Lost Ark<br />Queue Time Calculator</h1>
+    </header>
+    <form>
+      <input
+        class="inputnumber"
+        type="number"
+        pattern="”[0-9]*"
+        placeholder="Current Position"
+        id="firstNumber"
       />
-      <h1 class="text-2xl my-8 text-center font-semibold">
-        Lost Ark Queue Calculator
-      </h1>
-
-      <form class="flex flex-col justify-center items-center">
-        <p class="my-2">
-          Current Position :<br />
-          <input
-            class="bg-gray-900 text-white py-1 px-2"
-            type="number"
-            pattern="[0-9]*"
-            required="required"
-            id="firstNumber"
-          />
-        </p>
-        <p class="my-2">
-          Next Position :<br />
-          <input
-            class="bg-gray-900 text-white py-1 px-2"
-            type="number"
-            pattern="[0-9]*"
-            required="required"
-            id="secondNumber"
-          />
-        </p>
+      <input
+        class="inputnumber"
+        type="number"
+        pattern="”[0-9]*"
+        placeholder="Next Position"
+        id="secondNumber"
+      />
+      <div class="btn_cmd">
         <input
-          class="my-4 py-2 px-4 rounded-lg my-8 cursor-pointer bg-gray-900 transition duration-300 ease-in-out"
+          class="btn"
           type="button"
-          onClick="Calculator()"
+          onclick="Calculator()"
           value="Calculate"
         />
-      </form>
-      <p>Queue time remaining :</p>
-      <span
-        class="m-2 h-16 w-64 flex items-center justify-center"
-        id="result"
-      ></span>
-    </main>
+        <input class="btn" type="button" onclick="Reset()" value="Reset" />
+      </div>
+      <div class="result">
+        <p>Average Waiting Time :</p>
+        <span id="result"></span>
+      </div>
+    </form>
 
+    <footer>
+      <p>Made By <a href="https://twitter.com/Hugo_Rbh">@Hugo_Rbh</a></p>
+    </footer>
   </body>
 </html>
